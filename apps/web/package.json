@@ -1,0 +1,27 @@
+{
+  "name": "@mastoli/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.2.8",
+    "@mastoli/core": "0.1.0",
+    "lucide-react": "^0.468.0",
+    "next": "16.4.3",
+    "qrcode": "^1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sax": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "~19.3.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/sax": "^1.2.7"
+  }
+}

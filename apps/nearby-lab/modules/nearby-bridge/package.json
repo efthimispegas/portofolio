@@ -1,0 +1,7 @@
+{
+  "name": "portofolio-nearby-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Isolated experimental native nearby exposure bridge",
+  "license": "UNLICENSED"
+}

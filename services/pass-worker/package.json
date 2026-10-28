@@ -1,0 +1,9 @@
+{
+  "name": "@mastoli/pass-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"typecheck":"tsc --noEmit"},
+  "dependencies": {"@mastoli/core":"0.1.0","passkit-generator":"^3.5.7"},
+  "devDependencies": {"@types/node":"^24.0.0","typescript":"~6.0.3"}
+}

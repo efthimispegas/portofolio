@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Portofolio Nearby Lab",
+    "slug": "portofolio-nearby-lab",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "portofolio-nearby-lab",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "gr.portofolio.nearbylab",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "deploymentTarget": "27.0",
+      "associatedDomains": ["applinks:portofolio.pegasoft.ai"]
+    },
+    "plugins": ["expo-sqlite", ["expo-build-properties", {"ios": {"deploymentTarget": "27.0"}}]]
+  }
+}

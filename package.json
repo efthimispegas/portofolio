@@ -1,0 +1,26 @@
+{
+  "name": "mastoli-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @mastoli/web",
+    "ios": "npm run ios --workspace @mastoli/mobile",
+    "mobile": "npm run start --workspace @mastoli/mobile",
+    "build": "npm run build --workspace @mastoli/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "tsx --test packages/core/src/*.test.ts apps/web/lib/server/*.test.ts apps/mobile/tests/*.test.ts services/pass-worker/src/*.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "~6.0.3",
+    "@types/node": "^24.0.0"
+  },
+  "engines": {
+    "node": ">=24.15.0 <25"
+  }
+}

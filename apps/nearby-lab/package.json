@@ -1,0 +1,23 @@
+{
+  "name": "@mastoli/nearby-lab",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --port 8083",
+    "ios": "expo run:ios --port 8083",
+    "prebuild:limited": "PORTOFOLIO_LAB_PROFILE=limited-personal-team expo prebuild --platform ios --no-install",
+    "prebuild:full": "PORTOFOLIO_LAB_PROFILE=full-https expo prebuild --platform ios --no-install",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mastoli/core": "*",
+    "expo": "~58.0.19",
+    "expo-build-properties": "~58.0.11",
+    "expo-sqlite": "~58.0.14",
+    "react": "19.3.0",
+    "react-native": "0.88.0"
+  },
+  "devDependencies": { "@types/react": "~19.3.0", "typescript": "~6.0.3" },
+  "expo": { "autolinking": { "nativeModulesDir": "./modules" } }
+}

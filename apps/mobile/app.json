@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Portofolio",
+    "slug": "portofolio",
+    "version": "0.1.0",
+    "scheme": "portofolio",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "gr.portofolio.wallet.dev",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Scan a professional\u2019s card to save it in your wallet.",
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        }
+      }
+    },
+    "android": {
+      "package": "gr.portofolio.wallet.dev"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Scan a professional\u2019s card to save it in your wallet.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "27.0"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
